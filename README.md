@@ -4,6 +4,17 @@
 
 I build complete products across web applications, native audio, local artificial intelligence, computer vision, 3D and interactive experiences.
 
+## DAWWW-CORE
+
+### 🎛️ [Local-first browser DAW](https://github.com/unicornwhodev/Daw-core-desktop)
+
+DAWWW-CORE combines a sequencer, piano roll, arranger, mixer, automation and audio export with 51 built-in instruments and 16 built-in effects. Projects remain portable through the `.dw` format.
+
+[GitHub repository](https://github.com/unicornwhodev/Daw-core-desktop) · [Open Desktop Studio](https://dawww-core-local.com/app) · [Documentation](https://dawww-core-local.com/en/docs)
+
+`Web Audio` · `AudioWorklet` · `TypeScript` · `React` · `Local-first` · `Cross-device`
+
+
 ## Featured audio collection — UWdeVST
 
 <p align="center">
@@ -34,23 +45,9 @@ The source code is publicly viewable under the **UWdeVST Proprietary Public-Sour
 
 `C++` · `JUCE` · `DSP` · `VST3` · `Windows`
 
-## DAWWW-CORE
-
-### 🎛️ [Local-first browser DAW](https://github.com/unicornwhodev/Daw-core-desktop)
-
-DAWWW-CORE combines a sequencer, piano roll, arranger, mixer, automation and audio export with 51 built-in instruments and 16 built-in effects. Projects remain portable through the `.dw` format.
-
-[GitHub repository](https://github.com/unicornwhodev/Daw-core-desktop) · [Open Desktop Studio](https://dawww-core-local.com/app) · [Documentation](https://dawww-core-local.com/en/docs)
-
-`Web Audio` · `AudioWorklet` · `TypeScript` · `React` · `Local-first` · `Cross-device`
 
 ## Other projects
 
-### 🎮 Make My Game
-
-An experimental game-development project focused on character generation, sprite-sheet pipelines and multiple mobile game formats.
-
-`Generative AI` · `Computer Vision` · `Unity` · `Python`
 
 ### 🔥 [FireViewer](https://github.com/fireviewer)
 
