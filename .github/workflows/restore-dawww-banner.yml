@@ -1,0 +1,50 @@
+name: Restore DAWWW banner
+
+on:
+  push:
+    paths:
+      - '.github/workflows/restore-dawww-banner.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rebuild approved DAWWW-CORE banner
+        shell: bash
+        run: |
+          set -euo pipefail
+          {
+            cat assets/.dawww-banner-parts/part-00.txt
+            head -c 10000 assets/.dawww-banner-parts/part-00a.txt
+            cat assets/.dawww-banner-parts/part-00b.txt
+            cat assets/.dawww-banner-parts/part-01.txt
+            cat assets/.dawww-banner-parts/part-02.txt
+            cat assets/.dawww-banner-parts/part-03.txt
+            cat assets/.dawww-banner-parts/part-04.txt
+            cat assets/.dawww-banner-parts/part-05.txt
+            cat assets/.dawww-banner-parts/part-06.txt
+            cat assets/.dawww-banner-parts/part-07.txt
+            cat assets/.dawww-banner-parts/part-08.txt
+            cat assets/.dawww-banner-parts/part-09.txt
+            cat assets/.dawww-banner-parts/part-10.txt
+            cat assets/.dawww-banner-parts/part-11.txt
+            cat assets/.dawww-banner-parts/part-12.txt
+            cat assets/.dawww-banner-parts/part-13.txt
+            cat assets/.dawww-banner-parts/part-14.txt
+            cat assets/.dawww-banner-parts/part-15.txt
+          } > /tmp/dawww-banner.b64
+          test "$(wc -c < /tmp/dawww-banner.b64)" = "201072"
+          base64 --decode /tmp/dawww-banner.b64 > assets/dawww-core-profile-banner.webp
+          test "$(stat -c%s assets/dawww-core-profile-banner.webp)" = "150802"
+          echo "4ee4b5c407021ac06d469eab8f31ebcaf96350cdf13d9d9e42b1077f386ef9f8  assets/dawww-core-profile-banner.webp" | sha256sum -c -
+          rm -rf assets/.dawww-banner-parts
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/dawww-core-profile-banner.webp assets/.dawww-banner-parts
+          git commit -m "Restore full-quality DAWWW-CORE profile banner"
+          git push
