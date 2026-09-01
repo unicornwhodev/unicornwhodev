@@ -8,6 +8,12 @@ I build complete products across web applications, native audio, local artificia
 
 ### 🎛️ [Local-first browser DAW](https://github.com/unicornwhodev/Daw-core-desktop)
 
+<p align="center">
+  <a href="https://dawww-core-local.com/app">
+    <img src="assets/dawww-core-profile-banner.webp" width="960" alt="DAWWW-CORE — local-first browser DAW for desktop and Android" />
+  </a>
+</p>
+
 DAWWW-CORE combines a sequencer, piano roll, arranger, mixer, automation and audio export with 51 built-in instruments and 16 built-in effects. Projects remain portable through the `.dw` format, this format allow users to work on mobile and desktop with full cross device support. dawww core is already on work for web version, android comming soon
 
 [GitHub repository](https://github.com/unicornwhodev/Daw-core-desktop) · [Open Desktop Studio](https://dawww-core-local.com/app) · [Documentation](https://dawww-core-local.com/en/docs)
