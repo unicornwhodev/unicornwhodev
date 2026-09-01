@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1774" height="887" viewBox="0 0 1774 887">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#07090b"/>
+      <stop offset="0.42" stop-color="#080a0c"/>
+      <stop offset="1" stop-color="#050607"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#07090b" stop-opacity="1"/>
+      <stop offset="0.55" stop-color="#07090b" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#07090b" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="screenClip">
+      <rect x="594" y="61" width="1118" height="765" rx="22"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1774" height="887" fill="url(#bg)"/>
+
+  <rect x="582" y="49" width="1142" height="789" rx="26" fill="#0c0f12" stroke="#252a2e" stroke-width="3"/>
+  <image href="https://raw.githubusercontent.com/unicornwhodev/Daw-core-desktop/main/asset/capture/Screenshot_20260817-034231.png" x="594" y="61" width="1118" height="765" preserveAspectRatio="xMidYMid slice" clip-path="url(#screenClip)"/>
+  <rect x="510" y="0" width="430" height="887" fill="url(#fade)"/>
+
+  <image href="https://raw.githubusercontent.com/unicornwhodev/Daw-core-desktop/main/asset/logos/dawww_core_favicon_symbol_with_bg_edit_213223361277514.png" x="128" y="64" width="330" height="330" preserveAspectRatio="xMidYMid meet"/>
+
+  <text x="55" y="493" fill="#f2f3f4" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="800" letter-spacing="1">DAWWW-CORE</text>
+  <rect x="178" y="536" width="180" height="4" fill="#ff5b1b"/>
+  <text x="68" y="626" fill="#b8bdc2" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="500" letter-spacing="5">LOCAL-FIRST BROWSER DAW</text>
+  <text x="128" y="697" fill="#ff681f" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="500" letter-spacing="5">DESKTOP ↔ ANDROID</text>
+
+  <text x="69" y="790" fill="#70767c" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="600" letter-spacing="2">MUSIC PRODUCTION · LOCAL-FIRST · CROSS-DEVICE</text>
+</svg>
