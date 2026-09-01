@@ -1,0 +1,55 @@
+name: Assemble DAWWW banner
+
+on:
+  push:
+    paths:
+      - '.github/workflows/assemble-dawww-banner.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Rebuild approved banner
+        shell: bash
+        run: |
+          set -euo pipefail
+          PARTS=assets/.dawww-banner-parts
+          cat \
+            "$PARTS/part-00.txt" \
+            "$PARTS/part-00a.txt" \
+            "$PARTS/part-00b.txt" \
+            "$PARTS/part-01.txt" \
+            "$PARTS/part-02.txt" \
+            "$PARTS/part-03.txt" \
+            "$PARTS/part-04.txt" \
+            "$PARTS/part-05.txt" \
+            "$PARTS/part-06.txt" \
+            "$PARTS/part-07.txt" \
+            "$PARTS/part-08.txt" \
+            "$PARTS/part-09.txt" \
+            "$PARTS/part-10.txt" \
+            "$PARTS/part-11.txt" \
+            "$PARTS/part-12.txt" \
+            "$PARTS/part-13.txt" \
+            "$PARTS/part-14.txt" \
+            "$PARTS/part-15.txt" > /tmp/dawww-banner.b64
+          base64 --decode /tmp/dawww-banner.b64 > assets/dawww-core-profile-banner.webp
+          test "$(stat -c '%s' assets/dawww-core-profile-banner.webp)" = "150802"
+          echo "4ee4b5c407021ac06d469eab8f31ebcaf96350cdf13d9d9e42b1077f386ef9f8  assets/dawww-core-profile-banner.webp" | sha256sum -c -
+      - name: Commit sharp banner
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/dawww-core-profile-banner.webp
+          if ! git diff --cached --quiet; then
+            git commit -m "Use sharp approved DAWWW-CORE banner"
+            git push
+          fi
