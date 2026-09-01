@@ -53,3 +53,5 @@ jobs:
             git commit -m "Use sharp approved DAWWW-CORE banner"
             git push
           fi
+
+# rerun after complete binary upload
