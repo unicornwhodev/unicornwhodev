@@ -10,7 +10,7 @@ I build complete products across web applications, native audio, local artificia
 
 <p align="center">
   <a href="https://dawww-core-local.com/app">
-    <img src="assets/dawww-core-profile-banner.svg" width="960" alt="DAWWW-CORE — local-first browser DAW for desktop and Android" />
+    <img src="assets/dawww-core-profile-banner.webp" width="960" alt="DAWWW-CORE — local-first browser DAW for desktop and Android" />
   </a>
 </p>
 
