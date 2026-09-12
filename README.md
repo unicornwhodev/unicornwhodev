@@ -27,33 +27,6 @@ DAWWW-CORE combines a sequencer, piano roll, arranger, mixer, automation and aud
   <img src="assets/uwdevst-banner.webp" width="960" alt="UnicorSoundEngine / UWdeVST — instruments and effects" />
 </p>
 
-### Featured instruments
-
-**Start with Bass and Guitar.** These instruments have already undergone repeated human-listening and correction sessions. The assessments below describe the auditioned material, not automatic approval of every preset, downloadable version or public demo file.
-
-| Instrument | Listening assessment — 10 September 2026 | Access |
-| --- | --- | --- |
-| **Bass** | Strongest result within the collection; all **9 instruments** clearly identifiable and judged high quality | [Repository](https://github.com/unicornwhodev/synth-bass) · [Releases](https://github.com/unicornwhodev/synth-bass/releases) |
-| **Guitar** | Highly satisfactory, near-final results; minor corrections remain on a small number of presets | [Repository](https://github.com/unicornwhodev/synth-guitar) · [Releases](https://github.com/unicornwhodev/synth-guitar/releases) |
-
-### Also satisfactory in human listening
-
-**Orchestral Percussion** and **AmbientPercussion** received satisfactory listening assessments, with presets still less refined than Bass and Guitar. Their final installers and platform qualification remain separate from sound acceptance.
-
-- [Orchestral Percussion](https://github.com/unicornwhodev/uwdevst-orchestra/blob/main/docs/instruments/uwdevst-orchestral-percussion.md): a specific product, **not approval of the whole new Orchestra range**.
-- [AmbientPercussion](https://github.com/unicornwhodev/uwdevst-percussion/blob/main/docs/instruments/uwdevst-ambient-percussion.md): a specific product, **not approval of the separate standard Percussion plugin**.
-
-### In development — not part of the approved audio showcase
-
-| Product / range | Current status |
-| --- | --- |
-| Piano | Sound adjustments planned; some auditioned results remain too metallic or digital |
-| **Drum** | **Coming soon / À venir.** Substantial sound correction and renewed listening required; no release date announced |
-| New Orchestra range, excluding Orchestral Percussion | Substantial sound review and corrections still required |
-| Rare | Recent collection undergoing audit, calibration, refinement and corrections; not merely awaiting final sign-off |
-| Standard Percussion | Listening approval not established in the current review; kept separate from the two satisfactory percussion products above |
-
-**Unapproved recordings must not be used as public demonstrations.** General demo-playlist and download links have been removed from this showcase to avoid promoting unvalidated material. A demo needs explicit human-listening approval for the exact recording and version; compilation and automated audio tests are not enough.
 
 ### Audio effects
 
